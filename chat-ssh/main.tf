@@ -1,5 +1,6 @@
 module "ssh-chat" {
-    source = "git::https://github.com/louislef299/terraform-aws-resources.git?ref=v1.0.0"
+    source = "git::https://github.com/louislef299/terraform-aws-resources.git"
+    //source = "../../terraform-aws-resources"
 
     vpc_cidr = "10.0.0.0/16"
     environment = "ssh-chat"

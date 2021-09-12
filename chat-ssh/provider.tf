@@ -1,8 +1,12 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      region = "us-east-2"
+      #source  = "hashicorp/aws"
       version = "~> 3.0"
+      assume_role {
+        role_arn = "arn:aws:iam::571251826155:user/Louis"
+      }
     }
   }
 

@@ -4,7 +4,7 @@ module "ssh-chat-network" {
   environment = "ssh-chat"
   vpc-enabled = 1
 
-  ec2-enabled = 1
+  ec2-enabled      = 1
   instance-regions = ["us-east-2"]
 }
 // this needs to be done after you decide implementation 

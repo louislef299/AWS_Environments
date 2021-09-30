@@ -9,7 +9,11 @@ terraform {
   backend "s3" {
     bucket = "vpc-backend"
     key    = "aws/s3"
-    region = "us-east-2"
+    #key    = "global/s3/terraform.tfstate"
+    region  = "us-east-2"
+
+    #dynamodb_table = "terraform_locks"
+    #encrypt        = true
   }
 }
 

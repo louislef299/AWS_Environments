@@ -1,3 +1,7 @@
+module "ssh-chat-security-groups" {
+  source = "git::https://github.com/louislef299/terraform-aws-security-groups.git"
+}
+
 module "ssh-chat-network" {
   source = "git::https://github.com/louislef299/terraform-aws-resources.git"
 

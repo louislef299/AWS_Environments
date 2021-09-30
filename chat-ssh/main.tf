@@ -7,6 +7,7 @@ module "ssh-chat-network" {
 
   environment = "ssh-chat"
 
+  ssh-sg-id        = module.ssh-chat-security-groups.ssh-sg-id
   ec2-enabled      = 1
   instance-regions = ["us-east-2"]
 }

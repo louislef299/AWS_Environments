@@ -7,13 +7,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "vpc-backend"
-    key    = "aws/s3"
-    #key    = "global/s3/terraform.tfstate"
+    bucket = "terraform-permanent-backend-louis"
+    key    = "global/s3/terraform.tfstate"
     region = "us-east-2"
 
-    #dynamodb_table = "terraform_locks"
-    #encrypt        = true
+    dynamodb_table = "terraform-locks"
+    encrypt        = true
   }
 }
 

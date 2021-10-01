@@ -1,2 +1,4 @@
 .terraform*
 *.tfplan
+
+**/up_and_running

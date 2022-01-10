@@ -23,5 +23,3 @@ within the repo later.
 So that about wraps tonight up, I would say it was very productive.
 A lot of debugging has got me here though. I plan to upload a VPC
 diagram to the README eventually.
-
-Goodnight!
